@@ -4,7 +4,9 @@ import sys
 import gc
 from types import ModuleType, FunctionType
 
-
+"""
+https://stackoverflow.com/questions/449560/how-do-i-determine-the-size-of-an-object-in-python
+"""
 BLACKLIST = type, ModuleType, FunctionType
 def getsize(obj, is_debug=False):
 	"""sum size of object & members."""
